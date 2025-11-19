@@ -1,0 +1,101 @@
+:root{
+    --dark-green: #065E7C;
+    --green: #387E96;
+    --background: #FFFFFF;
+    --text-color: #000000;
+    --font: "Mulish", sans-serif;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--background);
+    color: var(--text-color);
+    font-family: var(--font);
+  
+}
+
+header{
+    background-color: var(--dark-green);
+    padding: 0.75rem 1.75rem 0.75rem 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    gap: 1.56rem;
+}
+
+header input{
+    background-color: var(--green);
+    color: var(--background);
+    border: none;
+    padding: 0.75rem;
+    border-radius: 0.4rem;
+    width: 100%;
+    max-width: 18rem;
+}
+
+header input::placeholder{
+    color: #ffffffcc;
+}
+
+main{
+   display: flex;
+   flex-direction: column;
+   max-width: 900px;
+   margin: 0 auto;
+}
+
+main img{
+    width: 100%;
+    margin-bottom: 1.75rem;
+    
+}
+
+section {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.action-buttons button {
+    all: unset;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.action-buttons button img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin: 1.75rem auto;
+    display: block;
+}
+
+section p {
+    font-size: 1rem;          
+    line-height: 1.5;        
+    margin-bottom: 1.5rem;    
+    color: var(--text-color); 
+  
+}
+
+
