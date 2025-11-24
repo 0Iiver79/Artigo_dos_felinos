@@ -1,4 +1,4 @@
-:root{
+:root {
     --dark-green: #065E7C;
     --green: #387E96;
     --background: #FFFFFF;
@@ -6,34 +6,31 @@
     --font: "Mulish", sans-serif;
 }
 
-
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: var(--background);
     color: var(--text-color);
     font-family: var(--font);
-  
 }
 
-header{
+header {
     background-color: var(--dark-green);
-    padding: 0.75rem 1.75rem 0.75rem 1.75rem;
+    padding: 0.75rem 1.75rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: sticky;
     top: 0;
-    left: 0;
     width: 100%;
     gap: 1.56rem;
 }
 
-header input{
+header input {
     background-color: var(--green);
     color: var(--background);
     border: none;
@@ -43,21 +40,21 @@ header input{
     max-width: 18rem;
 }
 
-header input::placeholder{
+header input::placeholder {
     color: #ffffffcc;
 }
 
-main{
-   display: flex;
-   flex-direction: column;
-   max-width: 900px;
-   margin: 0 auto;
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-main img{
+main img {
+    
     width: 100%;
     margin-bottom: 1.75rem;
-    
 }
 
 section {
@@ -91,11 +88,81 @@ section {
 }
 
 section p {
-    font-size: 1rem;          
-    line-height: 1.5;        
-    margin-bottom: 1.5rem;    
-    color: var(--text-color); 
-  
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    
+}
+
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.articles h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+
+.articles article {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0; 
+    background: none; 
+    border-radius: 0; 
+    box-shadow: none; 
+}
+
+
+
+.articles article img {
+    width: 151px;
+    height: 84px;
+    object-fit: cover;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+
+.articles article h4 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0.3rem;
+}
+
+
+.articles article p {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: #444;
+}
+
+footer {
+    background-color: var(--dark-green);
+    color: var(--background);
+    text-align: center;
+    padding: 1.2rem;
+    font-size: 0.95rem;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-weight: 500;
 }
 
 
